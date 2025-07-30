@@ -1,0 +1,178 @@
+.scene{
+    width: 800px;
+    height: 500px;
+    position: relative;
+    background-color: cornflowerblue;
+    overflow: hidden;
+  margin: 0 auto;
+  border: 2px solid #000;
+}
+.ground {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background-color: lightgreen;
+  border-top-left-radius: 100% 50px;
+  border-top-right-radius: 100% 50px;
+}           
+.sun {
+  width: 80px;
+  height: 80px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+  left: 370px;
+  z-index: 1;
+}
+
+
+.mountain {
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom: 150px solid #a0522d;
+  position: absolute;
+  bottom: 200px;
+}
+
+
+.mountain1 {
+  left: 200px;
+}
+.mountain2 {
+  left: 360px;
+  z-index: 0;
+}
+.mountain3 {
+  left: 520px;
+}
+.cloud {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  width: 120px;
+  height: 60px;
+}
+
+.cloud-part {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.part1 {
+  width: 40px;
+  height: 40px;
+  left: 0;
+  top: 10px;
+}
+
+.part2 {
+  width: 50px;
+  height: 50px;
+  left: 30px;
+  top: 0;
+}
+
+.part3 {
+  width: 40px;
+  height: 40px;
+  left: 60px;
+  top: 10px;
+}
+.house {
+  position: absolute;
+  bottom: 100px;
+  left: 150px;
+  width: 100px;
+  height: 100px;
+  background-color: #b5651d;
+  z-index: 2;
+}
+
+.roof {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 60px solid darkred;
+}
+
+.door {
+  position: absolute;
+  bottom: 0;
+  left: 35px;
+  width: 30px;
+  height: 50px;
+  background-color: #4b3621;
+  border-radius: 0 0 5px 5px;
+}
+.tree {
+  position: absolute;
+  left: 600px;
+  bottom: 100px;
+  width: 100px;
+  height: 150px;
+}
+
+/* Trunk */
+.tree-trunk {
+  width: 20px;
+  height: 60px;
+  background-color: saddlebrown;
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  border-radius: 5px;
+}
+
+/* Leaves (top of the tree) */
+.tree-top {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.top1 {
+  top: 10px;
+  left: 10px;
+}
+
+.top2 {
+  top: 0;
+  left: 30px;
+}
+
+.top3 {
+  top: 10px;
+  left: 50px;
+}
+.river {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #1e90ff;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  z-index: 1;
+  opacity: 0.9;
+}
+.tree-stem {
+  width: 10px;
+  height: 40px;
+  background-color: saddlebrown;
+  position: absolute;
+  bottom: 60px; /* top of trunk */
+  left: 45px;   /* center align with trunk */
+  z-index: 1;
+}
