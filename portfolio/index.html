@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koduru Srujana Reddy - Portfolio</title>
+  <style>
+    body {
+      background: rgba(0, 0, 0, 1);
+      font-family: 'poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    .header {
+      position: fixed;
+      top: 0vh;
+      width: 100vw;
+      padding: 0vh 0vw;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+      background-color: rgba(255, 255, 255, 0.08);
+      border-bottom-left-radius: 5vw;
+      border-bottom-right-radius: 5vw;
+      border-bottom: 0.7vh solid rgba(0, 255, 255, 0.8);
+    }
+
+    .logo {
+      font-size: 4.5vh;
+    }
+
+    nav ul {
+      list-style: none;
+      padding-right: 1vw;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      background: transparent;
+    }
+
+    .logo {
+      padding-left: 3vw;
+      color: cyan;
+      text-decoration: none;
+    }
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5vh 1vw;
+      display: block;
+    }
+
+    .home {
+      color: #666;
+      text-decoration: none;
+      padding: 0.5vh 1vw;
+      display: block;
+      background: cyan;
+      border-radius: 0.8vw;
+      border: 0.3vh solid black;
+    }
+
+    .home:hover {
+      box-shadow: 0vw 0vw 2vw cyan;
+    }
+
+    nav ul li a:hover {
+      text-shadow: 0 0 2vw cyan;
+      transform: scale(1.1) translateY(-0.5vh);
+      transition: transform 0.3s ease-in-out;
+      text-decoration: underline;
+    }
+
+    .footer {
+      color: #999;
+      bottom: 0;
+      text-align: center;
+      padding: 1rem 0;
+      background-color: transparent;
+    }
+
+    .fun {
+      color: white;
+    }
+
+    .content-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+      margin: 10vh 0;
+      padding: 0 5vw;
+      color: white;
+    }
+
+    .content-text {
+      flex: 1;
+      padding-right: 2vw;
+      font-family: 'poppins', sans-serif;
+    }
+
+    .content-image {
+      flex: 0.8;
+      padding-left: 4vw;
+
+    }
+
+    .content-image:hover {
+      transform: scale(1.01) translateY(-1vh);
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .content-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 1vw;
+
+      box-shadow: 0 0 50vh grey;
+    }
+
+    .buttons {
+      margin-top: 2vh;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      background-color: cyan;
+      color: black;
+      padding: 1vh 2vw;
+      border-radius: 0.8vw;
+      border: 0.3vh solid black;
+      margin-right: 1vw;
+      transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .buttons a:hover {
+      background-color: white;
+      transform: scale(1.05);
+    }
+
+    /* Popup Notification Styles */
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      max-width: 30vw;
+      transform: translate(-50%, -50%);
+      background-color: #444;
+      color: white;
+      padding: 1em;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      z-index: 999;
+      display: none;
+      /* Initially hidden */
+    }
+
+    .popup h3 {
+      margin-top: 0;
+    }
+
+    .popup p {
+      margin-bottom: 0;
+    }
+
+    .popup .close-btn {
+      position: absolute;
+      top: 0.5em;
+      right: 0.5em;
+      cursor: pointer;
+      color: white;
+      font-size: 1.2em;
+    }
+
+    .starfield {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+
+    .star {
+      position: absolute;
+      background-color: grey;
+      border-radius: 50%;
+      opacity: 0;
+    }
+
+    /* Animation */
+    @keyframes blink {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">Koduru Srujana Reddy</a>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html" class="home">Home</a></li>
+        <li><a href="about.html" class="about">About Me</a></li>
+        <li><a href="projects.html" class="projects">Projects</a></li>
+        <li><a href="skills.html" class="skills">Skills</a></li>
+        <li><a href="contact.html" class="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="starfield" title="This is a starfield background."></div>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <br>
+    </section>
+    <section class="content-section">
+      <div class="content-text">
+        <h1>Welcome to My Portfolio</h1>
+        <p>👋 Hi, I'm Koduru Srujana Reddy, a dedicated B.Tech Computer Science Engineering student at Anurag
+          University, passionate about leveraging technology to create meaningful solutions.</p>
+        <p>💻 As a CSE student with a strong CGPA of 9.93, I'm navigating the dynamic landscape of computer science,
+          from algorithms and data structures to software engineering principles. I have hands-on experience with
+          multiple programming languages and modern web technologies.</p>
+        <p>💞️ I'm looking to collaborate on innovative projects that combine my skills in data analysis, web
+          development, and AI. My experience includes developing platforms like FarmCare for agriculture assistance and
+          Healthify for rural healthcare solutions.</p>
+        <p>📚 I have completed certifications in Data Analytics, Cyber Threat Management, and gained practical
+          experience through my virtual internship at AICTE. I believe in continuous learning and applying technology to
+          solve real-world problems.</p>
+        <br>
+        <div class="buttons">
+          <a href="resume.pdf" download>Download CV</a>
+          <a href="contact.html">Contact Me</a>
+        </div>
+      </div>
+      <div class="content-image">
+        <img src="profile.jpeg" alt="Koduru Srujana Reddy">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Koduru Srujana Reddy. All rights reserved.</p>
+  </footer>
+
+  <!-- Popup Notification -->
+  <div id="popup" class="popup">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <h3>Welcome to My Portfolio</h3>
+    <p>Thank you for visiting! Feel free to explore my projects and skills.</p>
+    <p>CAUTION!!!</p>
+    <p>Remember this is just a sample portfolio made in a few hours, it may have some unprofessional texts and content
+      too.</p>
+  </div>
+
+</body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const imageContainer = document.querySelector('.content-image');
+    let floating = true;
+    let direction = 1;
+    let position = 0;
+
+    function floatEffect() {
+      if (floating) {
+        position += 0.2 * direction;
+        if (position > 10 || position < -10) {
+          direction *= -1;
+        }
+        imageContainer.style.transform = `translateY(${position}px)`;
+        requestAnimationFrame(floatEffect);
+      }
+    }
+
+    floatEffect();
+  });
+
+
+  // Function to show popup when page loads
+  window.onload = function () {
+    document.getElementById('popup').style.display = 'block';
+  }
+
+  // Function to close the popup
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+  }
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const starfield = document.querySelector(".starfield");
+
+    // Function to generate a random number within a range
+    function getRandomNumber(min, max) {
+      return Math.random() * (max - min) + min;
+    }
+
+    // Function to create a star element
+    function createStar() {
+      const star = document.createElement("div");
+      star.classList.add("star");
+      const isShootingStar = Math.random() > 0.95; // 5% chance of creating a shooting star
+      if (isShootingStar) {
+        star.classList.add("shooting-star");
+        star.style.animationDuration = `${getRandomNumber(2, 4)}s`; // Set animation duration for shooting stars
+      }
+      star.style.left = `${getRandomNumber(0, 100)}vw`;
+      star.style.top = `${getRandomNumber(0, 100)}vh`;
+      star.style.width = `${isShootingStar ? getRandomNumber(3, 5) : getRandomNumber(1, 2)}px`; // Larger width for shooting stars
+      star.style.height = `${isShootingStar ? getRandomNumber(3, 5) : getRandomNumber(1, 2)}px`; // Larger height for shooting stars
+      starfield.appendChild(star);
+    }
+
+    // Generate stars including shooting stars
+    for (let i = 0; i < 1000; i++) {
+      createStar();
+    }
+
+    // Function to make stars fade in and out
+    function blinkStars() {
+      const stars = document.querySelectorAll(".star");
+      stars.forEach((star) => {
+        const duration = getRandomNumber(2, 4); // Randomize duration for each star
+        star.style.animation = `blink ${duration}s infinite alternate`;
+      });
+    }
+
+    // Blink stars
+    blinkStars();
+  });
+
+</script>
+
+
+</html>

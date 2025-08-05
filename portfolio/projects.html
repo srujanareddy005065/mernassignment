@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Koduru Srujana Reddy - Portfolio</title>
+
+  <style>
+    body {
+      background: rgba(0, 0, 0, 1);
+      font-family: 'poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+
+    .header {
+      position: fixed;
+      top: 0vh;
+      width: 100vw;
+      padding: 0vh 0vw;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+      background-color: rgba(255, 255, 255, 0.08);
+      border-bottom-left-radius: 5vw;
+      border-bottom-right-radius: 5vw;
+      border-bottom: 0.7vh solid rgba(0, 255, 255, 0.8);
+    }
+
+    .logo {
+      font-size: 4.5vh;
+    }
+
+    nav ul {
+      list-style: none;
+      padding-right: 1vw;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      background: transparent;
+    }
+
+    .logo {
+      padding-left: 3vw;
+      color: cyan;
+      text-decoration: none;
+    }
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5vh 1vw;
+      display: block;
+    }
+
+    .projects {
+      color: #666;
+      text-decoration: none;
+      padding: 0.5vh 1vw;
+      display: block;
+      background: cyan;
+      border-radius: 0.8vw;
+      border: 0.3vh solid black;
+
+    }
+
+    .projects:hover {
+      box-shadow: 0vw 0vw 2vw cyan;
+    }
+
+    nav ul li a:hover {
+      text-shadow: 0 0 2vw cyan;
+      transform: scale(1.1) translateY(-0.5vh);
+      transition: transform 0.3s ease-in-out;
+      text-decoration: underline;
+    }
+
+
+    .footer {
+      color: #999;
+      bottom: 0;
+      text-align: center;
+      padding: 1rem 0;
+      background-color: transparent;
+    }
+
+
+    .link {
+      padding: 10vh 10vw;
+      color: white;
+    }
+
+    .starfield {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+
+    .star {
+      position: absolute;
+      background-color: grey;
+      border-radius: 50%;
+      opacity: 0;
+    }
+
+    /* Animation */
+    @keyframes blink {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">Koduru Srujana Reddy</a>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html" class="home">Home</a></li>
+        <li><a href="about.html" class="about">About Me</a></li>
+        <li><a href="projects.html" class="projects">Projects</a></li>
+        <li><a href="skills.html" class="skills">Skills</a></li>
+        <li><a href="contact.html" class="contact">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <div class="starfield" title="This is a starfield background."></div>
+  <main>
+    <section>
+      <div class="link">
+        <h1>My Projects</h1>
+        <div style="margin: 2vh 0; padding: 2vh; background-color: rgba(255, 255, 255, 0.1); border-radius: 1vw;">
+          <h2 style="color: cyan;">My Portfolio (May 2024 - July 2024)</h2>
+          <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+          <p>Developed a responsive and dynamic portfolio using HTML, CSS, and JavaScript to showcase projects, skills, and experience with a modern and user-friendly interface.</p>
+        </div>
+        <div style="margin: 2vh 0; padding: 2vh; background-color: rgba(255, 255, 255, 0.1); border-radius: 1vw;">
+          <h2 style="color: cyan;">Farm Care (Aug 2024 - Oct 2024)</h2>
+          <p><strong>Technologies:</strong> HTML, CSS, Vue.JS, SupaBase, Tailwind CSS, Vercel</p>
+          <p>Developed FarmCare, an AI-powered platform for farmers, offering pest identification, soil analysis, plant health monitoring, and price prediction. Features include a land leasing platform and a farmers' forum for community support and knowledge sharing.</p>
+          <p><strong>Achievement:</strong> Secured 2nd Place out of 150 teams for FarmCare, an AI-powered agriculture assistance platform.</p>
+        </div>
+        <div style="margin: 2vh 0; padding: 2vh; background-color: rgba(255, 255, 255, 0.1); border-radius: 1vw;">
+          <h2 style="color: cyan;">Healthify (Feb 2024 - March 2024)</h2>
+          <p><strong>Technologies:</strong> HTML, CSS, JavaScript, PHP, SupaBase, Tailwind CSS</p>
+          <p>Developed Healthify, a platform connecting doctors with rural healthcare to enhance medical support, health insurance access, and financial guidance. It facilitates bank account creation, awareness programs, emergency health fundraising, and rural medical camp setups. Aimed at improving healthcare accessibility and financial stability in underserved communities.</p>
+          <p><strong>Achievement:</strong> Achieved Top 5 Position out of 200 teams in TechHack Hackathon for the Healthify project.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Koduru Srujana Reddy. All rights reserved.</p>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const starfield = document.querySelector(".starfield");
+
+      // Function to generate a random number within a range
+      function getRandomNumber(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+
+      // Function to create a star element
+      function createStar() {
+        const star = document.createElement("div");
+        star.classList.add("star");
+        const isShootingStar = Math.random() > 0.95; // 5% chance of creating a shooting star
+        if (isShootingStar) {
+          star.classList.add("shooting-star");
+          star.style.animationDuration = `${getRandomNumber(2, 4)}s`; // Set animation duration for shooting stars
+        }
+        star.style.left = `${getRandomNumber(0, 100)}vw`;
+        star.style.top = `${getRandomNumber(0, 100)}vh`;
+        star.style.width = `${isShootingStar ? getRandomNumber(3, 5) : getRandomNumber(1, 2)}px`; // Larger width for shooting stars
+        star.style.height = `${isShootingStar ? getRandomNumber(3, 5) : getRandomNumber(1, 2)}px`; // Larger height for shooting stars
+        starfield.appendChild(star);
+      }
+
+      // Generate stars including shooting stars
+      for (let i = 0; i < 1000; i++) {
+        createStar();
+      }
+
+      // Function to make stars fade in and out
+      function blinkStars() {
+        const stars = document.querySelectorAll(".star");
+        stars.forEach((star) => {
+          const duration = getRandomNumber(2, 4); // Randomize duration for each star
+          star.style.animation = `blink ${duration}s infinite alternate`;
+        });
+      }
+
+      // Blink stars
+      blinkStars();
+    });
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Wikipedia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: black;
+        }
+        a {
+            color: rgb(99, 99, 178);
+            text-decoration: none;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML</h1>
+    <p><b>Hypertext Markup Language (HTML)</b> is the standard <a href="https://en.wikipedia.org/wiki/Markup_language">markup language</a> for documents designed to be displayed in a <a href="https://en.wikipedia.org/wiki/Web_browser">web browser</a>. It defines the content and structure of <a href="https://en.wikipedia.org/wiki/Web_content">web content</a>. It is often assisted by technologies such as <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">Cascading Style Sheets</a> (CSS) and <a href="https://en.wikipedia.org/wiki/Scripting_language">scripting languages</a> such as <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>.</p>
+
+    <p>Web browsers receive HTML documents from a <a href="https://en.wikipedia.org/wiki/Web_server">web server</a> or from local storage and render the documents into multimedia web pages. HTML describes the structure of a <a href="https://en.wikipedia.org/wiki/Web_page">web page</a> semantically and originally included cues for its appearance.</p>
+
+    <p><a href="https://en.wikipedia.org/wiki/HTML_element">HTML elements</a> are the building blocks of HTML pages. With HTML constructs, <a href="https://en.wikipedia.org/wiki/HTML#Images">images</a> and other objects such as <a href="https://en.wikipedia.org/wiki/HTML#Forms">interactive forms</a> may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, <a href="https://en.wikipedia.org/wiki/HTML#Links">links</a>, quotes, and other items. HTML elements are delineated by <i>tags</i>, written using <a href="https://en.wikipedia.org/wiki/Angle_brackets">angle brackets</a>. Tags such as <code>&lt;img&gt;</code> and <code>&lt;input&gt;</code> directly introduce content into the page. Other tags such as <code>&lt;p&gt;</code> surround and provide information about document text and may include sub-element tags. Browsers do not display the HTML tags but use them to interpret the content of the page.</p>
+
+    <p>HTML can embed programs written in a <a href="https://en.wikipedia.org/wiki/Scripting_language">scripting language</a> such as <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>, which affects the behavior and content of web pages. The inclusion of CSS defines the look and layout of content. The <a href="https://en.wikipedia.org/wiki/World_Wide_Web_Consortium">World Wide Web Consortium</a> (W3C), former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997. A form of HTML, known as <a href="https://en.wikipedia.org/wiki/HTML5">HTML5</a>, is used to display video and audio, primarily using the <code>&lt;canvas&gt;</code> element, together with JavaScript.</p>
+
+    <h2>Markup</h2>
+    <p>
+        HTML markup consists of several key components, including those called <i>tags</i> (and their attributes), 
+        character-based data types, character references and entity references. 
+        HTML tags most commonly come in pairs like <code>&lt;h1&gt;</code> and <code>&lt;/h1&gt;</code>, although some represent empty elements and are unpaired, for example <code>&lt;img&gt;</code>. 
+        The first tag in such a pair is the start tag, and the second is the end tag. 
+        They are also called <i>opening tags</i> and <i>closing tags</i>.
+    </p>
+
+    <p>
+        Another important component is the HTML <a href="https://en.wikipedia.org/wiki/Document_type_declaration">document type declaration</a>, 
+        which triggers standards mode rendering.
+    </p>
+
+    <p>The following is an example of the classic “Hello, World!” program:</p>
+
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;This is a title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;p&gt;Hello world!&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <p>
+        The text between <code>&lt;html&gt;</code> and <code>&lt;/html&gt;</code> describes the web page, 
+        and the text between <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code> is the visible page content.
+        The markup text <code>&lt;title&gt;This is a title&lt;/title&gt;</code> defines the browser page title shown on tabs and window titles, 
+        and the tag <code>&lt;div&gt;</code> defines a division of the page used for easy styling.
+    </p>
+
+    <h2>Element examples</h2>
+    <p>Header of the HTML document:</p>
+    <pre>
+&lt;head&gt;
+    &lt;title&gt;The Title&lt;/title&gt;
+    &lt;link rel="stylesheet" href="stylebyjimbowales.css"&gt; &lt;!-- Imports Stylesheets --&gt;
+&lt;/head&gt;
+    </pre>
+
+    <h2>Headings</h2>
+    <p>HTML headings are defined with the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags:</p>
+    <pre>
+&lt;h1&gt;Heading level 1&lt;/h1&gt;
+&lt;h2&gt;Heading level 2&lt;/h2&gt;
+&lt;h3&gt;Heading level 3&lt;/h3&gt;
+&lt;h4&gt;Heading level 4&lt;/h4&gt;
+&lt;h5&gt;Heading level 5&lt;/h5&gt;
+&lt;h6&gt;Heading level 6&lt;/h6&gt;
+    </pre>
+
+    <p>The effects are:</p>
+    <h1>Heading Level 1</h1>
+    <h2>Heading Level 2</h2>
+    <h3>Heading Level 3</h3>
+    <h4>Heading Level 4</h4>
+    <h5>Heading Level 5</h5>
+    <h6>Heading Level 6</h6>
+
+   
+    <h2>History</h2>
+    <h3>Development</h3>
+
+    <p>In 1980, <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee">physicist Tim Berners-Lee</a>, a contractor at <a href="https://en.wikipedia.org/wiki/CERN">CERN</a>, proposed and prototyped <b>ENQUIRE</b>, a system for CERN researchers to use and share documents. In 1989, Berners-Lee wrote a memo proposing an <a href="https://en.wikipedia.org/wiki/Hypertext">Internet-based hypertext</a> system. Berners-Lee specified HTML and wrote the browser and server software in late 1990. That year, Berners-Lee and CERN <a href="https://en.wikipedia.org/wiki/Data_systems">data systems</a> engineer <a href="https://en.wikipedia.org/wiki/Robert_Cailliau">Robert Cailliau</a> collaborated on a joint request for funding, but the project was not formally adopted by CERN.</p>
+
+    <p>The first publicly available description of HTML was a document called "HTML Tags". It describes 18 elements comprising the initial, relatively simple design of HTML. Except for the hyperlink tag, these were strongly influenced by <a href="https://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language">SGML</a>-based documentation format at CERN.</p>
+
+    <h2>HTML version timeline</h2>
+
+    <h3>HTML 2</h3>
+    <p><b>November 24, 1995</b><br>
+    HTML 2.0 was published as <a href="https://datatracker.ietf.org/doc/html/rfc1866">RFC 1866</a>. Supplemental RFCs added capabilities:</p>
+    <ul>
+        <li>November 1995: <a href="https://datatracker.ietf.org/doc/html/rfc1867">RFC 1867</a> (form-based file upload)</li>
+        <li>May 1996: <a href="https://datatracker.ietf.org/doc/html/rfc1942">RFC 1942</a> (tables)</li>
+        <li>August 1996: <a href="https://datatracker.ietf.org/doc/html/rfc1980">RFC 1980</a> (client-side image maps)</li>
+        <li>January 1997: <a href="https://datatracker.ietf.org/doc/html/rfc2070">RFC 2070</a> (internationalization)</li>
+    </ul>
+
+    <h3>HTML 3</h3>
+    <p><b>January 14, 1997</b><br>
+    HTML 3.2 was published as a <a href="https://www.w3.org/TR/REC-html32">W3C Recommendation</a>. It adopted many of <a href="https://en.wikipedia.org/wiki/Netscape">Netscape</a>'s visual markup tags and deprecated others.</p>
+
+    <h3>HTML 4</h3>
+    <p><b>December 18, 1997</b><br>
+    HTML 4.0 was published as a W3C Recommendation. It offers three variations:</p>
+    <ul>
+        <li>Strict, in which deprecated elements are forbidden</li>
+        <li>Transitional, in which deprecated elements are allowed</li>
+        <li>Frameset, in which mostly only frame related elements are allowed</li>
+    </ul>
+
+</body>
+</html>
